@@ -344,21 +344,21 @@ dependencies = [
 
 [[package]]
 name = "csv"
-version = "1.0.7"
+version = "1.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9044e25afb0924b5a5fc5511689b0918629e85d68ea591e5e87fbf1e85ea1b3b"
+checksum = "52cd9d68cf7efc6ddfaaee42e7288d3a99d613d4b50f76ce9827ae0c6e14f938"
 dependencies = [
  "csv-core",
- "itoa 0.4.3",
- "ryu 0.2.7",
- "serde",
+ "itoa",
+ "ryu",
+ "serde_core",
 ]
 
 [[package]]
 name = "csv-core"
-version = "0.1.5"
+version = "0.1.13"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fa5cdef62f37e6ffe7d1f07a381bc0db32b7a3ff1cac0de56cb0d81e71f53d65"
+checksum = "704a3c26996a80471189265814dbc2c257598b96b8a7feae2d31ace646bb9782"
 dependencies = [
  "memchr",
 ]
@@ -668,12 +668,6 @@ name = "is_terminal_polyfill"
 version = "1.70.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a6cb138bb79a146c1bd460005623e142ef0181e3d0219cb493e02f7d08a35695"
-
-[[package]]
-name = "itoa"
-version = "0.4.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1306f3464951f30e30d12373d31c79fbd52d236e5e896fd92f96ec7babbbe60b"
 
 [[package]]
 name = "itoa"
@@ -1121,12 +1115,6 @@ checksum = "b39cdef0fa800fc44525c84ccb54a029961a8215f9619753635a9c0d2538d46d"
 
 [[package]]
 name = "ryu"
-version = "0.2.7"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "eb9e9b8cde282a9fe6a42dd4681319bfb63f121b8a8ee9439c6f4107e58a46f7"
-
-[[package]]
-name = "ryu"
 version = "1.0.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a50f4cf475b65d88e057964e0e9bb1f0aa9bbb2036dc65c64596b42932536984"
@@ -1213,7 +1201,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3084b546a1dd6289475996f182a22aba973866ea8e8b02c51d9f46b1336a22da"
 dependencies = [
  "indexmap",
- "itoa 1.0.17",
+ "itoa",
  "memchr",
  "serde",
  "serde_core",
@@ -1284,9 +1272,9 @@ dependencies = [
  "bytes",
  "cfg-if 1.0.4",
  "faststr",
- "itoa 1.0.17",
+ "itoa",
  "ref-cast",
- "ryu 1.0.22",
+ "ryu",
  "serde",
  "simdutf8",
  "sonic-number",
@@ -1450,7 +1438,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "91e7d9e3bb61134e77bde20dd4825b97c010155709965fedf0f49bb138e52a9d"
 dependencies = [
  "deranged",
- "itoa 1.0.17",
+ "itoa",
  "libc",
  "num-conv",
  "num_threads",
