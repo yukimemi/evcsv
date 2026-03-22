@@ -509,9 +509,9 @@ dependencies = [
 
 [[package]]
 name = "evtx"
-version = "0.11.0"
+version = "0.11.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fa24faff10efa63d8ad2c86da648e4b51905956aa3155160af75e200a9b358ae"
+checksum = "775d27b3ad8889149c6b72e6101347a11b935b82049c40dd08fac06e777542c6"
 dependencies = [
  "ahash",
  "anyhow",
